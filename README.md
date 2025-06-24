@@ -1,7 +1,9 @@
-Tugas Akhir Mata Kuliah Komunikasi Data dan Jaringa Komputer
+Tugas Akhir Mata Kuliah Komunikasi Data dan Jaringan Komputer
 
 Nama  : Tanjung Permata Cahyo Evaldo
+
 NIM  : 2300018156
+
 Kelas  : C
 
 Deskripsi Website:
