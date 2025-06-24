@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko Komponen PC - Tugas Akhir</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Toko Komponen PC</h1>
+            <ul>
+                <li><a href="#" id="nav-home">Beranda</a></li>
+                <li><a href="#" id="nav-cart">Keranjang (<span id="cart-count">0</span>)</a></li>
+                <li><a href="#" id="nav-about">Tentang Kami</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section id="home-section" class="active-section">
+            <h2>Produk Unggulan</h2>
+            <div id="product-list" class="product-grid">
+                <p class="loading-message">Memuat produk...</p>
+            </div>
+        </section>
+
+        <section id="detail-section" class="hidden-section">
+            <button id="back-to-home" class="button secondary-button">&larr; Kembali ke Beranda</button>
+            <div id="product-detail" class="detail-section-content">
+                <p>Memuat detail produk...</p>
+            </div>
+        </section>
+
+        <section id="cart-section" class="hidden-section">
+            <h2>Keranjang Belanja Anda</h2>
+            <div id="cart-items">
+                <p id="empty-cart-message">Keranjang Anda kosong.</p>
+            </div>
+            <div id="cart-summary" class="cart-summary">
+                <h3>Total: <span id="cart-total">Rp 0</span></h3>
+                <button id="checkout-button" class="button primary-button" disabled>Lanjutkan ke Checkout</button>
+            </div>
+        </section>
+
+        <section id="checkout-section" class="hidden-section">
+            <h2>Formulir Checkout</h2>
+            <form id="checkout-form" class="checkout-form">
+                <div class="form-group">
+                    <label for="nama">Nama Lengkap:</label>
+                    <input type="text" id="nama" name="nama" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="alamat">Alamat Pengiriman:</label>
+                    <textarea id="alamat" name="alamat" rows="4" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="metode-pembayaran">Metode Pembayaran:</label>
+                    <select id="metode-pembayaran" name="metode_pembayaran" required>
+                        <option value="">Pilih Metode</option>
+                        <option value="transfer">Transfer Bank </option>
+                        <option value="cod">COD </option>
+                    </select>
+                </div>
+                <button type="submit" class="button primary-button">Proses Pesanan</button>
+            </form>
+        </section>
+
+        <section id="confirmation-section" class="hidden-section">
+            <h2>Pesanan Anda Telah Diterima!</h2>
+            <div class="confirmation-message">
+                <p>Terima kasih atas pesanan Anda. Kami akan segera memprosesnya.</p>
+                <p>Nomor Pesanan Anda: <strong id="order-id">#XYZ12345</strong></p>
+                <button id="confirm-back-to-home" class="button primary-button">Lanjutkan Belanja</button>
+            </div>
+        </section>
+
+        <section id="about-section" class="hidden-section">
+            <h2>Tentang Toko Komponen PC</h2>
+            <div class="about-content">
+                <p>Selamat datang di Toko Komponen PC, toko yang menyediakan berbagai komponen PC dengan kualitas terbaik dan harga yang terjangkau.</p>
+                <p>Website ini mensimulasikan toko online yang menjual berbagai komponen penting untuk membangun atau meng-upgrade komputer Anda.</p>
+                <h3>Tujuan Proyek</h3>
+                <ul>
+                    <li>Tugas akhir mata kuliah Komunikasi Data dan Jaringan Komputer</li>
+                </ul>
+                <p>
+                </p>
+                <p>Terima kasih telah mengunjungi toko kami!</p>
+                <p>Untuk pertanyaan atau umpan balik, silakan hubungi: <a href="mailto:tanjungdn24@gmai.com">tanjungdn24@gmai.com</a></p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Toko Komponen PC.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
